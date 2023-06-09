@@ -1,0 +1,439 @@
+<?php
+      include ("connection.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Shamim Sine's website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- custom cursors  -->
+<div class="cursor-1"></div>
+<div class="cursor-2"></div>
+
+
+<div id="menu-bars" class="fas fa-bars"></div>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"> <span>shamim</span> sine </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="follow">
+        <a href="https://www.facebook.com/shamimsine" target="_blank">
+            <i= class="fab fa-facebook-f">
+        </i>
+            </a>
+       <!-- <a href="" class="fab fa-twitter"></a>-->
+        <a href="https://github.com/SHAMI-SINE"target="_blank" class="fab fa-github"></a>
+        <a href="https://www.instagram.com/shamimsine/"target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/md-shamim-hossain-2b9838260/"target="_blank" class="fab fa-linkedin"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h4 class="hi">
+            <?php if(isset($_SESSION['status'])) {
+                    echo  $_SESSION['status'];
+                    unset( $_SESSION['status']);
+                  }  
+            ?>
+        </h4>
+        <span class="hi"> Hi there... </span>
+        <h3> I am <span> Shamim Sine </span> </h3>
+        <p class="info"> I am a software Engineer </p>
+        <p class="text"> BS.c in computer Science & Engineering from North south University </p>
+        <a href="#about" class="btn">About me</a>
+    </div>
+
+    <div class="image">
+        <img src="images/home.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> About <span> Me </span> </h1>
+
+<div class="row-1">
+
+    <div class="image">
+        <img src="images/about.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3> My name is Shamim Sine. I am a Software Engineer. </h3>
+        <p>  Bs.c in computer Science & Engineering From North South University.</p>
+        <div class="box-container">
+            <div class="box">
+                <p> <span> Age : </span> 23 </p>
+                <p> <span> Gender : </span> Male </p>
+                <p> <span> Language : </span> Bengali, English </p>
+                <p> <span> Work : </span> Software Engineer </p>
+            </div>
+            <div class="box">
+                <p> <span> Freelance : </span> available </p>
+                <p> <span> Phone : </span> 01788270040 </p>
+                <p> <span> Email : </span> shamimhossain0040@gmail.com </p>
+                <p> <span> Country : </span> Bangladesh </p>
+            </div>
+        </div>
+        <a href="./images/cv.pdf" download class="btn">Download CV</a>
+        <a href="#" class="btn">Hire me</a>
+    </div>
+
+</div>
+
+<h1 class="heading"> <span> My </span> skills </h1>
+
+<div class="row-2">
+
+    <div class="skills">
+        <div class="progress">
+            <h3> web design <span> 95% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> web development <span> 80% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> UI design <span> 75% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> seo marketing <span> 85% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> >> 2+ </h3>
+            <p>years of experience</p>
+        </div>
+        <div class="box">
+            <h3> >> 20+ </h3>
+            <p>happy clients</p>
+        </div>
+        <div class="box">
+            <h3> >> 5+ </h3>
+            <p>projects completed</p>
+        </div>
+        <div class="box">
+            <h3> >> 2 </h3>
+            <p>awards won</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+<h1 class="heading"> <span> My </span> Services </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>Web design</h3>
+            <p>Mid level web designier .Using basic HTML,CSS ,PHP and Mysql</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Machine Learning</h3>
+            <p>Did Some machine learning Project with my team mate</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>responsive design</h3>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Microsoft Office</h3>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Digital marketing</h3>
+            <p>Well knowledge about Digital Marketing</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email marketing</h3>
+            <p></p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- experience section starts  -->
+
+<section class="experience" id="experience">
+
+    <h1 class="heading"> <span> my </span> experience </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <span> 2019 - 2021 </span>
+                <h3>Front-end development</h3>
+                <p>I have done some project as a Frond-end developer.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2019 - 2020 </span>
+                <h3>JAVA</h3>
+                <p>I have some strong knowledge about Java programming.I have done some project thats are related to Java .</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2019 - 2020</span>
+                <h3>C/C++/Python</h3>
+                <p>Some Basic concept about C/C++ Language.Also done some project using C & Python.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2022 </span>
+                <h3>Android Application</h3>
+                <p>I have done a android application project(Messaging app) using android studio </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2022 </span>
+                <h3>Artificial Intelligence</h3>
+                <p>I have some basic knowledge about Artificial Intelligence.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span>2022 </span>
+                <h3>Machine Learning</h3>
+                <p> I have done some basic Machine learning project .</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- experience section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> my </span> portfolio </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/img-1.jpg" alt="">
+            <h3> project 01 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-2.jpg" alt="">
+            <h3> project 02 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-3.jpg" alt="">
+            <h3> project 03 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-4.jpg" alt="">
+            <h3> project 04 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-5.jpg" alt="">
+            <h3> project 05 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-6.jpg" alt="">
+            <h3> project 06 </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>my email</h3>
+            <p>shamimhossain0040@gmail.com</p>
+            <p>mdshamim.hossain@northsouth.edu</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>my number</h3>
+            <p>01843025531</p>
+            <p></p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>my address</h3>
+            <p>Basundhara R\A, DHAKA</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="contact_us.php" method="post">
+
+             <input type="text" name="name" placeholder="name" class="box">
+            
+            <input type="email" name="email" placeholder="email" class="box">
+            <input type="number" name="number" placeholder="number" class="box">
+
+            <textarea name="message" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" name="submit" class="btn" value="send message">
+
+
+        </form>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58399.582189954606!2d90.38259545805965!3d23.819527597375973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c62fce7d991f%3A0xacfaf1ac8e944c05!2sBasundhara%20Residential%20Area%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1678112601516!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+<footer class="footer"> created by <span> Shamim sine  </span>  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
